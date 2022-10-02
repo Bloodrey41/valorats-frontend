@@ -1,0 +1,22 @@
+table {
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+thead {
+    text-transform: capitalize;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+td img {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
