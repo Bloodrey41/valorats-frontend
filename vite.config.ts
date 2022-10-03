@@ -7,6 +7,7 @@ export default defineConfig({
     plugins: [
 	react(),
     ],
+    base: '/valorats-frontend/',
     resolve: {
 	alias: {
 	    '@': path.resolve(__dirname, './src'),
