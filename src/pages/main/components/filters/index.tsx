@@ -33,18 +33,18 @@ const Filters = ({ maps, agents }: Props) => {
 		    <option value={map} key={map}>{map.charAt(0).toUpperCase() + map.slice(1)}</option>
 		))}
 	    </select>
-	    <select onChange={handleAgentChange} value={selectedAgent} style={{ width: `calc(${selectsWidth}% - 20px)` }}>
-		<option value=''>Agent</option>
-		{agents.map(agent => (
-		    <option value={agent} key={agent}>{agent}</option>
-		))}
-	    </select>
 	    {!selectedAgent && <select onChange={handleRoleChange} value={selectedRole} style={{ width: `calc(${selectsWidth}% - 20px)` }}>
 		<option value=''>Role</option>
 		{ROLES.map(role => (
 		    <option value={role} key={role}>{role.charAt(0).toUpperCase() + role.slice(1)}</option>
 		))}
 	    </select>}
+	    <select onChange={handleAgentChange} value={selectedAgent} style={{ width: `calc(${selectsWidth}% - 20px)` }}>
+		<option value=''>Agent</option>
+		{agents.map(agent => (
+		    <option value={agent} key={agent}>{agent}</option>
+		))}
+	    </select>
 	</div>
     );
 }

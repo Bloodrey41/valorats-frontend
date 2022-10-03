@@ -52,7 +52,7 @@ const Table = ({ data, headers }: Props) => {
 			    <img src={row.agent.picture} alt={row.agent.name} />
 			</td>
 			{headers.filter(h => h.includes(selectedMap)).map(header => (
-			    <td key={row.agent.name + header}>{row.maps[header]}</td>
+			    <td key={row.agent.name + header}>{row.maps[header]}%</td>
 			))}
 		    </tr>
 		))}
