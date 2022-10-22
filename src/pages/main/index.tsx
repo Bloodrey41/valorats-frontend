@@ -2,7 +2,6 @@ import Table from './components/table';
 import Filters from './components/filters';
 import useGetData from './hooks/use-get-data';
 import { IData } from './models';
-import { EVENT } from '../../config';
 
 import './style.css';
 
@@ -20,7 +19,7 @@ const Main = () => {
 
     return (
 	<div className='main'>
-	    <h1 className='title'>Valorant stats - {EVENT}</h1>
+	    <h1 className='title'>Valorant stats</h1>
 	    <hr />
 	    <Filters maps={maps} agents={agents} />
 	    <hr />
