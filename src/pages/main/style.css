@@ -16,3 +16,13 @@ hr {
     margin: 10px;
     border: 1px solid #ccc;
 }
+
+input {
+    margin: 10px;
+    padding: 12px;
+    background-color: #eee;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    font-size: 17px;
+    width: calc(100% - 50px);
+}

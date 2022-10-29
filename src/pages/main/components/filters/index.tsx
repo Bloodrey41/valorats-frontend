@@ -17,7 +17,6 @@ const Filters = ({ maps, agents }: Props) => {
     const { selectedMap, setSelectedMap } = useMapStore(state => state);
     const { selectedAgent, setSelectedAgent } = useAgentStore(state => state);
     const { selectedRole, setSelectedRole } = useRoleStore(state => state);
-    const { selectedEvent, setSelectedEvent } = useEventStore(state => state);
 
     const selectsWidth = useMemo(() => selectedAgent ? 50 : 33.3, [selectedAgent]);
 
@@ -27,15 +26,8 @@ const Filters = ({ maps, agents }: Props) => {
 
     const handleRoleChange = (e: React.ChangeEvent<HTMLSelectElement>) => setSelectedRole(e.target.value);
     
-    const handleEventChange = (e: React.ChangeEvent<HTMLInputElement>) => setSelectedEvent(e.target.value);
-
     return (
 	<div className='filters'>
-	    <input 
-		onChange={handleEventChange}
-		value={selectedEvent}
-		type='url' 
-		placeholder='thespike.gg event stats URL' />
 	    <select 
 		onChange={handleMapChange}
 		value={selectedMap}
