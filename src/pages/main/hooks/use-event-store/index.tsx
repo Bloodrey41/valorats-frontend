@@ -1,4 +1,5 @@
 import create from 'zustand';
+import { DEFAULT_EVENT } from '../../../../config';
 
 interface EventState {
     selectedEvent: string,
@@ -6,7 +7,7 @@ interface EventState {
 }
 
     const useEventStore = create<EventState>((set) => ({
-	selectedEvent: 'https://www.thespike.gg/events/stats/vct-2022-off-season-superdome/1999',
+	selectedEvent: DEFAULT_EVENT,
 	setSelectedEvent: (event: string) => set({ selectedEvent: event }),
     }));
 
